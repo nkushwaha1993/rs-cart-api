@@ -1,4 +1,4 @@
-import { CartItem } from '../../cart/models';
+import { CartItem } from '../../cart';
 
 export type Order = {
   id?: string,
@@ -15,6 +15,6 @@ export type Order = {
     address: any,
   },
   comments: string,
-  status: string;
+  status: "IN_PROGRESS" | "ORDERED";
   total: number;
 }
